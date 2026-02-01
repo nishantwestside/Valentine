@@ -1,0 +1,71 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+/* Banner */
+.banner-gif img {
+    height: 250px;
+}
+
+/* Buttons wrapper */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+    position: relative;
+}
+
+/* Buttons */
+#yes-button,
+#no-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+}
+
+/* YES */
+#yes-button {
+    background-color: green;
+}
+
+/* NO */
+#no-button {
+    background-color: red;
+    position: relative; /* initially normal */
+    transition: all 0.25s ease;
+}
+
+/* Message */
+.message {
+    display: none;
+    margin-top: 30px;
+}
+
+#success-message {
+    font-size: 24px;
+}
+
+.credit {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #666;
+}
